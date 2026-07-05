@@ -3,215 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundacja Sztuka Decyzji — Konferencja 2026</title>
-    <meta name="description" content="Konferencja Sztuka Decyzji — wydarzenie dla młodych ludzi o świadomym podejmowaniu decyzji. Październik 2026, Gdańsk.">
+    <title>Sztuka Decyzji — Konferencja dla młodych | Gdańsk 2026</title>
+    <meta name="description" content="Konferencja Sztuka Decyzji — dwa dni o świadomym podejmowaniu decyzji dla 350 młodych osób. Październik 2026, Gdańsk. Zapisz się na listę early birds.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260705">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#top" class="nav-logo">
-                <span class="logo-mark">SD</span>
+                <span class="logo-mark">S/D</span>
                 <span class="logo-text">Sztuka Decyzji</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#problem">Problem</a></li>
-                <li><a href="#filary">Filary</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#konferencja">Konferencja</a></li>
+                <li><a href="#program">Program</a></li>
                 <li><a href="#laboratorium">Laboratorium</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#fundacja">Fundacja</a></li>
             </ul>
-            <a href="#kontakt" class="nav-cta">Dołącz</a>
+            <a href="#early-birds" class="nav-cta">Early birds</a>
+            <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <header id="top" class="hero">
-        <div class="hero-grain"></div>
         <div class="hero-inner">
-            <p class="eyebrow">Fundacja Sztuka Decyzji · Konferencja 2026</p>
+            <div class="hero-topline">
+                <span class="hero-badge">Konferencja · edycja pierwsza</span>
+                <span class="hero-badge outline">Gdańsk — październik 2026</span>
+            </div>
             <h1 class="hero-title">
-                Lepsze decyzje<br>
-                <em>w niesprzyjających</em> czasach.
+                Sztuka<br>Decyzji<span class="title-dot">.</span>
             </h1>
             <p class="hero-sub">
-                Dwudniowa konferencja dla 350 młodych osób, które chcą świadomie wybierać swoją drogę — w pieniądzach, w karierze, w życiu.
+                Dwa dni dla <strong>350 młodych osób</strong> o tym, jak podejmować
+                lepsze decyzje — o pieniądzach, przyszłości i własnej drodze —
+                w świecie, który gra nieczysto.
             </p>
-            <div class="hero-meta">
-                <div class="meta-item">
-                    <span class="meta-label">Termin</span>
-                    <span class="meta-value">Październik 2026</span>
-                </div>
-                <div class="meta-divider"></div>
-                <div class="meta-item">
-                    <span class="meta-label">Miejsce</span>
-                    <span class="meta-value">Gdańsk</span>
-                </div>
-                <div class="meta-divider"></div>
-                <div class="meta-item">
-                    <span class="meta-label">Uczestnicy</span>
-                    <span class="meta-value">~350 osób</span>
-                </div>
-                <div class="meta-divider"></div>
-                <div class="meta-item">
-                    <span class="meta-label">Czas trwania</span>
-                    <span class="meta-value">2 dni</span>
-                </div>
-            </div>
             <div class="hero-actions">
-                <a href="#filary" class="btn btn-primary">Poznaj program</a>
-                <a href="#kontakt" class="btn btn-ghost">Zgłoś się →</a>
+                <a href="#early-birds" class="btn btn-solid">Zapisz się na listę early birds</a>
+                <a href="#konferencja" class="btn btn-line">O konferencji ↓</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span></span>
-            <p>scroll</p>
+        <div class="hero-strip" aria-hidden="true">
+            <div class="strip-track">
+                <span>Świadomość</span><i>●</i><span>Kompetencje</span><i>●</i><span>Sprawczość</span><i>●</i>
+                <span>Świadomość</span><i>●</i><span>Kompetencje</span><i>●</i><span>Sprawczość</span><i>●</i>
+                <span>Świadomość</span><i>●</i><span>Kompetencje</span><i>●</i><span>Sprawczość</span><i>●</i>
+            </div>
         </div>
     </header>
 
-    <section id="problem" class="section section-problem">
+    <section id="konferencja" class="section sec-about">
         <div class="section-inner">
-            <div class="section-head">
-                <p class="section-tag">01 — Problem</p>
-                <h2 class="section-title">Decyzje, których nikt ich nie nauczył podejmować.</h2>
-            </div>
-            <div class="problem-grid">
-                <p class="problem-lead">
-                    Młodzi ludzie są dziś zmuszani do podejmowania ważnych, życiowych decyzji w środowisku, które systemowo wykorzystuje podatność ich umysłów na manipulacje.
-                </p>
-                <div class="problem-cards">
-                    <article class="problem-card">
-                        <span class="card-num">01</span>
-                        <h3>Przebodźcowanie</h3>
-                        <p>Świat domagający się uwagi szybciej, niż mózg potrafi ją przetworzyć.</p>
-                    </article>
-                    <article class="problem-card">
-                        <span class="card-num">02</span>
-                        <h3>Scam i „łatwe rozwiązania"</h3>
-                        <p>Obietnice szybkiego sukcesu zaprojektowane tak, by trafiły dokładnie tam, gdzie boli.</p>
-                    </article>
-                    <article class="problem-card">
-                        <span class="card-num">03</span>
-                        <h3>FOMO</h3>
-                        <p>Lęk, że ominęło nas coś ważnego — sterujący wyborami, których nie rozumiemy.</p>
-                    </article>
-                    <article class="problem-card">
-                        <span class="card-num">04</span>
-                        <h3>Natłok sprzecznych porad</h3>
-                        <p>Każdy w internecie wie lepiej. Mało kto bierze za to odpowiedzialność.</p>
-                    </article>
+            <div class="about-grid">
+                <div class="about-left">
+                    <p class="kicker">O wydarzeniu</p>
+                    <h2 class="h2">Konferencja organizowana przez Fundację Sztuka Decyzji</h2>
+                    <p class="lead">
+                        Młodzi ludzie podejmują dziś życiowe decyzje w środowisku, które
+                        aktywnie wykorzystuje podatność ich umysłów: przebodźcowanie,
+                        scam na każdym kroku, FOMO i natłok sprzecznych porad w internecie.
+                    </p>
+                    <p class="body-text">
+                        Konferencja „Sztuka Decyzji" to odpowiedź fundacji na ten problem.
+                        Program prowadzi uczestników trzyetapową drogą — od zrozumienia,
+                        co wpływa na ich wybory, przez konkretne kompetencje decyzyjne,
+                        aż po realne działanie po wydarzeniu.
+                    </p>
+                </div>
+                <div class="about-facts">
+                    <div class="fact">
+                        <span class="fact-num">2</span>
+                        <span class="fact-label">dni wydarzenia</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-num">350</span>
+                        <span class="fact-label">młodych uczestników</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-num">X 2026</span>
+                        <span class="fact-label">Gdańsk</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-num">3</span>
+                        <span class="fact-label">filary programu</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="filary" class="section section-pillars">
+    <section id="program" class="section sec-program">
         <div class="section-inner">
-            <div class="section-head">
-                <p class="section-tag">02 — Program</p>
-                <h2 class="section-title">Trzy filary — od wiedzy do działania.</h2>
-                <p class="section-desc">
-                    Program konferencji prowadzi uczestników po jasno wyznaczonej ścieżce: od zrozumienia, co wpływa na ich wybory, po konkretne projekty, które zaczną realizować po wydarzeniu.
-                </p>
-            </div>
+            <p class="kicker">Program</p>
+            <h2 class="h2">Od wiedzy do działania.<br>Trzy filary konferencji.</h2>
 
             <div class="pillars">
                 <article class="pillar">
-                    <div class="pillar-head">
-                        <span class="pillar-num">I</span>
-                        <div>
-                            <p class="pillar-kicker">Filar pierwszy</p>
-                            <h3 class="pillar-title">Świadomość</h3>
-                            <p class="pillar-question">Co wpływa na moje decyzje?</p>
-                        </div>
+                    <div class="pillar-top">
+                        <span class="pillar-index">1</span>
+                        <h3>Świadomość</h3>
+                        <p class="pillar-q">Co wpływa na moje decyzje?</p>
                     </div>
-                    <ul class="pillar-list">
-                        <li>Jak media społecznościowe i algorytmy przejmują uwagę i kształtują wybory.</li>
-                        <li>Pułapki poznawcze codzienności — presja grupy, autorytet, FOMO.</li>
-                        <li>Anatomia scamu, „szybkiego sukcesu" i łatwych rozwiązań.</li>
+                    <ul>
+                        <li>Jak media społecznościowe i algorytmy sterują uwagą i wyborami</li>
+                        <li>Pułapki poznawcze na co dzień: presja grupy, autorytety, FOMO</li>
+                        <li>Mechanizmy scamu, „szybkiego sukcesu" i łatwych rozwiązań</li>
                     </ul>
                 </article>
-
-                <article class="pillar">
-                    <div class="pillar-head">
-                        <span class="pillar-num">II</span>
-                        <div>
-                            <p class="pillar-kicker">Filar drugi</p>
-                            <h3 class="pillar-title">Kompetencje</h3>
-                            <p class="pillar-question">Jak mogę decydować lepiej?</p>
-                        </div>
+                <article class="pillar pillar-accent">
+                    <div class="pillar-top">
+                        <span class="pillar-index">2</span>
+                        <h3>Kompetencje</h3>
+                        <p class="pillar-q">Jak mogę decydować lepiej?</p>
                     </div>
-                    <ul class="pillar-list">
-                        <li>Krytyczne myślenie w edukacji, karierze i finansach — w praktyce.</li>
-                        <li>Podstawy samodzielności finansowej: budżet, dług, ryzyko.</li>
-                        <li>Frameworki decyzyjne pod presją czasu i stresem.</li>
+                    <ul>
+                        <li>Krytyczne myślenie w praktyce: edukacja, kariera, finanse</li>
+                        <li>Samodzielność finansowa: budżet, dług, ryzyko</li>
+                        <li>Frameworki decyzyjne — także pod presją czasu i stresem</li>
                     </ul>
                 </article>
-
                 <article class="pillar">
-                    <div class="pillar-head">
-                        <span class="pillar-num">III</span>
-                        <div>
-                            <p class="pillar-kicker">Filar trzeci</p>
-                            <h3 class="pillar-title">Sprawczość</h3>
-                            <p class="pillar-question">Z kim i jak zacząć działać?</p>
-                        </div>
+                    <div class="pillar-top">
+                        <span class="pillar-index">3</span>
+                        <h3>Sprawczość</h3>
+                        <p class="pillar-q">Z kim i jak zacząć działać?</p>
                     </div>
-                    <ul class="pillar-list">
-                        <li>Budowanie środowiska wsparcia i wychodzenie z własnej bańki.</li>
-                        <li>Paneliści i twórcy, którym warto zaufać — i dlaczego.</li>
-                        <li>Networking i mentoring: konkretne następne kroki.</li>
+                    <ul>
+                        <li>Zdrowe środowisko wsparcia i wychodzenie z bańki informacyjnej</li>
+                        <li>Paneliści i twórcy, którym warto zaufać</li>
+                        <li>Networking i mentoring: plan na konkretne następne kroki</li>
                     </ul>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="laboratorium" class="section section-lab">
+    <section id="laboratorium" class="section sec-lab">
         <div class="section-inner">
             <div class="lab-grid">
-                <div class="lab-content">
-                    <p class="section-tag light">03 — Po konferencji</p>
-                    <h2 class="section-title light">Laboratorium Młodych Projektów.</h2>
-                    <p class="lab-lead">
-                        Konferencja to dopiero początek. Dla około dziesięciorga wybranych uczestników uruchamiamy 6–8 tygodniowy program rozwojowy. Przy wsparciu mentorów pracują oni nad własnymi projektami — społecznymi lub biznesowymi — które po wydarzeniu mają szansę żyć dalej.
+                <div>
+                    <p class="kicker on-dark">Po konferencji</p>
+                    <h2 class="h2 on-dark">Laboratorium Młodych Projektów</h2>
+                    <p class="lead on-dark">
+                        Żeby wartości z konferencji żyły dłużej niż dwa dni, uruchamiamy
+                        program rozwojowy dla wybranych uczestników. Pod okiem mentorów
+                        pracują nad własnymi projektami — społecznymi lub biznesowymi.
                     </p>
-                    <div class="lab-stats">
-                        <div class="lab-stat">
-                            <span class="stat-num">10</span>
-                            <span class="stat-label">wybranych uczestników</span>
-                        </div>
-                        <div class="lab-stat">
-                            <span class="stat-num">6–8</span>
-                            <span class="stat-label">tygodni programu</span>
-                        </div>
-                        <div class="lab-stat">
-                            <span class="stat-num">1:1</span>
-                            <span class="stat-label">mentoring</span>
-                        </div>
-                    </div>
+                    <a href="#early-birds" class="btn btn-yellow">Chcę wiedzieć więcej</a>
                 </div>
-                <div class="lab-aside">
-                    <blockquote class="lab-quote">
-                        „Wartość konferencji nie kończy się w niedzielę wieczorem. Zaczyna się w poniedziałek rano."
-                    </blockquote>
+                <div class="lab-nums">
+                    <div class="lab-num"><b>6–8</b><span>tygodni programu</span></div>
+                    <div class="lab-num"><b>~10</b><span>wybranych uczestników</span></div>
+                    <div class="lab-num"><b>1:1</b><span>wsparcie mentorów</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="kontakt" class="section section-cta">
+    <section id="early-birds" class="section sec-form">
         <div class="section-inner">
-            <div class="cta">
-                <p class="section-tag">04 — Dołącz</p>
-                <h2 class="cta-title">Bądź na konferencji w Gdańsku, październik 2026.</h2>
-                <p class="cta-sub">Zostaw kontakt — jako pierwsi otrzymacie informacje o zapisach, prelegentach i naborze do Laboratorium Młodych Projektów.</p>
-                <form class="cta-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Dziękujemy ✓'; this.querySelector('button').disabled=true;">
-                    <input type="email" placeholder="twój@email.pl" required>
-                    <button type="submit">Zapisz mnie</button>
+            <div class="form-grid">
+                <div class="form-copy">
+                    <p class="kicker">Lista early birds</p>
+                    <h2 class="h2">Bądź pierwszą osobą, która się dowie.</h2>
+                    <p class="body-text">
+                        Zostaw kontakt, a napiszemy do Ciebie, gdy ruszą zapisy —
+                        z pulą miejsc i cen early birds, informacjami o prelegentach
+                        i naborem do Laboratorium Młodych Projektów.
+                    </p>
+                    <ul class="form-perks">
+                        <li>Pierwszeństwo zapisu przed otwarciem publicznej rejestracji</li>
+                        <li>Informacje o programie i prelegentach prosto od organizatorów</li>
+                        <li>Zero spamu — tylko konkrety o wydarzeniu</li>
+                    </ul>
+                </div>
+
+                <!--
+                  PODPIĘCIE FORMULARZA:
+                  W pliku index.html na dole, w skrypcie, ustaw stałą FORM_ENDPOINT
+                  na adres swojego backendu (np. Formspree: https://formspree.io/f/TWOJE_ID,
+                  Google Apps Script, Airtable itp.). Formularz wysyła POST z polami:
+                  name, email, role, consent, source=early-birds.
+                  Dopóki FORM_ENDPOINT jest pusty, formularz otwiera wiadomość e-mail
+                  z wypełnionymi danymi (mailto) — leady trafiają na skrzynkę fundacji.
+                -->
+                <form class="eb-form" id="ebForm" novalidate>
+                    <div class="eb-field">
+                        <label for="ebName">Imię</label>
+                        <input type="text" id="ebName" name="name" placeholder="np. Ola" required>
+                    </div>
+                    <div class="eb-field">
+                        <label for="ebEmail">E-mail</label>
+                        <input type="email" id="ebEmail" name="email" placeholder="twoj@email.pl" required>
+                    </div>
+                    <div class="eb-field">
+                        <label for="ebRole">Kim jesteś?</label>
+                        <select id="ebRole" name="role">
+                            <option value="uczen">Uczeń / uczennica</option>
+                            <option value="student">Student / studentka</option>
+                            <option value="rodzic">Rodzic / opiekun</option>
+                            <option value="nauczyciel">Nauczyciel / edukator</option>
+                            <option value="partner">Potencjalny partner / sponsor</option>
+                            <option value="inne">Ktoś inny</option>
+                        </select>
+                    </div>
+                    <label class="eb-consent">
+                        <input type="checkbox" id="ebConsent" name="consent" required>
+                        <span>Zgadzam się na kontakt e-mailowy od Fundacji Sztuka Decyzji w sprawie konferencji. Mogę wycofać zgodę w każdej chwili.</span>
+                    </label>
+                    <button type="submit" class="btn btn-solid btn-full" id="ebSubmit">Zapisz mnie na listę</button>
+                    <p class="eb-status" id="ebStatus" role="status"></p>
                 </form>
-                <p class="cta-fine">Nie wysyłamy spamu. Tylko konkretne informacje o wydarzeniu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fundacja" class="section sec-foundation">
+        <div class="section-inner">
+            <div class="foundation-grid">
+                <div>
+                    <p class="kicker">Organizator</p>
+                    <h2 class="h2">Fundacja Sztuka Decyzji</h2>
+                </div>
+                <div>
+                    <p class="lead">
+                        Naszym celem jest pomoc młodym osobom w podejmowaniu lepszych
+                        i bardziej świadomych wyborów — dotyczących pieniędzy, przyszłości
+                        i własnej drogi życiowej.
+                    </p>
+                    <p class="body-text">
+                        Konferencja w Gdańsku to nasze główne działanie w 2026 roku.
+                        Jeśli chcesz wesprzeć wydarzenie jako partner, sponsor lub patron
+                        medialny — napisz do nas:
+                        <a class="text-link" href="mailto:kontakt@sztukadecyzji.pl">kontakt@sztukadecyzji.pl</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -219,48 +252,113 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <span class="logo-mark">SD</span>
-                <div>
-                    <p class="footer-name">Fundacja Sztuka Decyzji</p>
-                    <p class="footer-tag">Lepsze decyzje. Lepsze życia.</p>
-                </div>
+                <span class="logo-mark on-dark">S/D</span>
+                <p>Fundacja Sztuka Decyzji<br><span>Gdańsk · Polska</span></p>
             </div>
-            <div class="footer-cols">
-                <div class="footer-col">
-                    <p class="footer-head">Wydarzenie</p>
-                    <a href="#problem">Problem</a>
-                    <a href="#filary">Filary</a>
-                    <a href="#laboratorium">Laboratorium</a>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-head">Kontakt</p>
-                    <a href="mailto:kontakt@sztukadecyzji.pl">kontakt@sztukadecyzji.pl</a>
-                    <a href="#">Współpraca</a>
-                    <a href="#">Patronat</a>
-                </div>
-            </div>
+            <nav class="footer-nav">
+                <a href="#konferencja">Konferencja</a>
+                <a href="#program">Program</a>
+                <a href="#laboratorium">Laboratorium</a>
+                <a href="#early-birds">Early birds</a>
+                <a href="mailto:kontakt@sztukadecyzji.pl">Kontakt</a>
+            </nav>
         </div>
         <div class="footer-bottom">
             <p>© 2026 Fundacja Sztuka Decyzji</p>
-            <p>Gdańsk · Polska</p>
         </div>
     </footer>
 
     <script>
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('in');
-                    io.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.section, .pillar, .problem-card, .lab-stat').forEach(el => io.observe(el));
+    (function () {
+        // ── PODPIĘCIE FORMULARZA ──────────────────────────────────
+        // Wklej tu endpoint przyjmujący POST (np. https://formspree.io/f/TWOJE_ID).
+        // Pusty string = fallback: otwiera e-mail z danymi zgłoszenia.
+        var FORM_ENDPOINT = "";
+        var FALLBACK_EMAIL = "kontakt@sztukadecyzji.pl";
 
-        const nav = document.querySelector('.nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 20);
+        var form = document.getElementById('ebForm');
+        var status = document.getElementById('ebStatus');
+        var submitBtn = document.getElementById('ebSubmit');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!form.reportValidity()) return;
+
+            var data = {
+                name: document.getElementById('ebName').value.trim(),
+                email: document.getElementById('ebEmail').value.trim(),
+                role: document.getElementById('ebRole').value,
+                consent: document.getElementById('ebConsent').checked ? 'tak' : 'nie',
+                source: 'early-birds'
+            };
+
+            if (FORM_ENDPOINT) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Wysyłanie…';
+                fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(data)
+                }).then(function (res) {
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    form.reset();
+                    submitBtn.textContent = 'Jesteś na liście ✓';
+                    status.textContent = 'Dziękujemy! Odezwiemy się, gdy ruszą zapisy.';
+                    status.className = 'eb-status ok';
+                }).catch(function () {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Zapisz mnie na listę';
+                    status.textContent = 'Coś poszło nie tak. Spróbuj ponownie lub napisz na ' + FALLBACK_EMAIL;
+                    status.className = 'eb-status err';
+                });
+            } else {
+                // Brak endpointu — otwórz gotową wiadomość e-mail
+                var body = 'Zapis na listę early birds — konferencja Sztuka Decyzji%0D%0A%0D%0A' +
+                    'Imię: ' + encodeURIComponent(data.name) + '%0D%0A' +
+                    'E-mail: ' + encodeURIComponent(data.email) + '%0D%0A' +
+                    'Rola: ' + encodeURIComponent(data.role);
+                window.location.href = 'mailto:' + FALLBACK_EMAIL +
+                    '?subject=' + encodeURIComponent('Early birds — Sztuka Decyzji') +
+                    '&body=' + body;
+                status.textContent = 'Otworzyliśmy wiadomość e-mail z Twoim zgłoszeniem — wystarczy wysłać.';
+                status.className = 'eb-status ok';
+            }
         });
+
+        // ── Nawigacja mobilna ─────────────────────────────────────
+        var burger = document.getElementById('navBurger');
+        var links = document.getElementById('navLinks');
+        burger.addEventListener('click', function () {
+            var open = links.classList.toggle('open');
+            burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            burger.classList.toggle('active', open);
+        });
+        links.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A') {
+                links.classList.remove('open');
+                burger.classList.remove('active');
+            }
+        });
+
+        // ── Cień nawigacji przy scrollu ───────────────────────────
+        var nav = document.getElementById('nav');
+        window.addEventListener('scroll', function () {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // ── Animacje wejścia (tylko gdy działa JS — bez JS wszystko widać) ──
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (en) {
+                    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal, .pillar, .fact, .lab-num').forEach(function (el) {
+                el.classList.add('will-reveal');
+                io.observe(el);
+            });
+        }
+    })();
     </script>
 </body>
 </html>
